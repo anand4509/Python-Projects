@@ -1,0 +1,49 @@
+from flask import Flask
+
+app = Flask(_name_)
+
+@app.route("/")
+def projects():
+    return """
+    <h1>My RESUME</h1>
+    <h1>Click</h1>
+    <a href="/resume">Click here</a>
+    """
+
+@app.route("/resume")
+def resume():
+    return """
+    <h2>Jyoti Anand</h2>
+
+    <h3>Professional Summary</h3>
+    <p>
+          I am an AI and Data Science student with a strong foundation in programming, machine learning, and data analysis.<br>
+           My skills include working with Python, statistical modeling, data visualization, and building predictive models.
+           I enjoy</br> solving real-world problems using data-driven approaches and continuously expanding my knowledge of emerging </br>
+           technologies in AI. My career objective is to become a skilled data scientist/AI engineer and contribute to innovative<br> 
+           projects that leverage data and intelligent systems to create meaningful impact.
+    </p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>Linux</li>
+        <li>Python, C Programming</li>
+        <li>Git & GitHub</li>
+        <li>Problem-solving & teamwork</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>Linux automation scripts using Bash</li>
+        <li>Mini web server setup on Ubuntu</li>
+    </ul>
+
+    <h3>Education</h3>
+    <p>       
+    <h3>Degree - B.Tech (AI & DS) <br>Vivekananda Global University Jaipur </br> </h3>
+    <p><strong>2024 - 2028</strong></p>
+    </p>
+    """
+
+if _name_ == "_main_":
+    app.run(debug=True)
