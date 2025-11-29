@@ -1,0 +1,30 @@
+print(" 1.minute to Hours \n","2.Hours to minute\n"
+,"3.meter to kilometers \n","4.kilometers to meter \n","5.Exit")
+x = int(input("Enter Your Choice:"))
+match x:
+    case 1:
+        num = int(input("Enter minutes ="))
+        hour = num / 60
+        print(num,"minutes =" ,hour,"minutes")
+    case 2:
+        num = int(input("Enter Hour="))
+        minute = num * 60
+        print(num,"Hours =" ,minute,"minutes")
+    case 3:
+        num = float(input("Enter meter= "))
+        kilometer = num / 1000
+        print(num,"meters =",kilometer,"kilometer")
+    case 4:
+        num = float(input("Enter kilometer= "))
+        kilometer = num * 1000
+        print(num,"kilometers =",kilometer,"meter")
+    case 5:
+        print("Exit!")
+
+        
+
+        
+        
+
+        
+    
